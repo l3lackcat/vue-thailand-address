@@ -57,7 +57,7 @@ Vue.use(VueGitHubCorners);
 
 #### CSS
 
-- **Unminified:** https://unpkg.com/vue-thailand-address/dist/vue-thailand-address.min.css
+- **Unminified:** https://unpkg.com/vue-thailand-address/dist/vue-thailand-address.css
 - **Minified:** https://unpkg.com/vue-thailand-address/dist/vue-thailand-address.min.css
 
 #### JS
