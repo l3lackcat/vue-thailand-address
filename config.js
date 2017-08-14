@@ -8,6 +8,10 @@ docute.init({
 			{
 				title: 'API',
 				path: '/api'
+			},
+			{
+				title: 'สาธิต',
+				path: '/demo'
 			}
 		]
 	},
