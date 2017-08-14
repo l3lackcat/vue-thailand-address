@@ -40,7 +40,7 @@ import VueThailandAddress from 'vue-thailand-address';
 import 'vue-thailand-address/dist/vue-thailand-address.css';
 
 // ใช้ Plugin
-Vue.use(VueGitHubCorners);
+Vue.use(VueThailandAddress);
 ```
 
 ```html
