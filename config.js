@@ -1,3 +1,5 @@
+/* global docute */
+
 docute.init({
 	nav: {
 		default: [
@@ -15,5 +17,6 @@ docute.init({
 			}
 		]
 	},
-	repo: 'gluons/vue-thailand-address'
+	repo: 'gluons/vue-thailand-address',
+	'edit-link': 'https://github.com/gluons/vue-thailand-address/blob/gh-pages/'
 });
