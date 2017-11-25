@@ -5,11 +5,11 @@
 ## 📛 ป้าย
 
 [![license](https://img.shields.io/github/license/gluons/vue-thailand-address.svg?style=flat-square)](./LICENSE)
-[![vue 2](https://img.shields.io/badge/vue-2-42b983.svg?style=flat-square)](https://vuejs.org)
+[![vue >=2.4](https://img.shields.io/badge/vue-%3E%3D2.4-42b983.svg?style=flat-square)](https://vuejs.org)
 [![npm](https://img.shields.io/npm/v/vue-thailand-address.svg?style=flat-square)](https://www.npmjs.com/package/vue-thailand-address)
 [![npm](https://img.shields.io/npm/dt/vue-thailand-address.svg?style=flat-square)](https://www.npmjs.com/package/vue-thailand-address)
-[![BCH compliance](https://bettercodehub.com/edge/badge/gluons/vue-thailand-address?style=flat-square&branch=master)](https://bettercodehub.com/)
-[![Dependency Status](https://dependencyci.com/github/gluons/vue-thailand-address/badge?style=flat-square)](https://dependencyci.com/github/gluons/vue-thailand-address)
+[![Codacy grade](https://img.shields.io/codacy/grade/f12ddf1f1a9f40dd834a28a65b2c1727.svg?style=flat-square)](https://www.codacy.com/app/gluons/vue-thailand-address)
+[![Gemnasium](https://img.shields.io/gemnasium/gluons/vue-thailand-address.svg?style=flat-square)](https://gemnasium.com/github.com/gluons/vue-thailand-address)
 [![Travis branch](https://img.shields.io/travis/gluons/vue-thailand-address/master.svg?style=flat-square)](https://travis-ci.org/gluons/vue-thailand-address)
 [![TSLint](https://img.shields.io/badge/TSLint-gluons-15757B.svg?style=flat-square)](https://github.com/gluons/tslint-config-gluons)
 [![Gitmoji](https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg?style=flat-square)](https://github.com/carloscuesta/gitmoji)
@@ -35,18 +35,34 @@ yarn add vue-thailand-address
 ```javascript
 import Vue from 'vue';
 import VueThailandAddress from 'vue-thailand-address';
+import App from './App.vue'
 
 // เพิ่ม stylesheet ของ Vue Thailand Address เข้าไป
 import 'vue-thailand-address/dist/vue-thailand-address.css';
 
 // ใช้ Plugin
 Vue.use(VueThailandAddress);
+
+new Vue({
+	el: '#app',
+	data() {
+		return {
+			formData: {
+				subdistrict: null, // ตำบล/แขวง
+				district: null, // อำเภอ/เขต
+				province: null, // จังหวัด
+				zipcode: null // รหัสไปรษณีย์
+			}
+		};
+	},
+	render: h => h(App)
+});
 ```
 
 ```html
 <template>
 	<div id="app">
-		<address-form></address-form>
+		<address-form v-model='formData'></address-form>
 	</div>
 </template>
 ```
@@ -91,11 +107,19 @@ Vue.use(VueThailandAddress);
 <body>
 	<div id="app">
 		<!-- Vue Thailand Address component -->
-		<address-form></address-form>
+		<address-form v-model='formData'></address-form>
 	</div>
 	<script>
 	let app = new Vue({
-		el: '#app'
+		el: '#app',
+		data: {
+			formData: {
+				subdistrict: null, // ตำบล/แขวง
+				district: null, // อำเภอ/เขต
+				province: null, // จังหวัด
+				zipcode: null // รหัสไปรษณีย์
+			}
+		}
 	});
 	</script>
 </body>
