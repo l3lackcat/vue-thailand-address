@@ -5,9 +5,10 @@
   "private": true,
   "main": "index.js",
   "scripts": {
-    "test": "echo \"No test specified\" && exit 0",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "dev": "start-storybook -p 9001",
+    "build": "build-storybook",
+    "lint": "eslint --ext .js,.vue .",
+    "test": "npm run lint"
   },
   "repository": {
     "type": "git",
@@ -28,13 +29,19 @@
   },
   "homepage": "https://github.com/gluons/vue-thailand-address",
   "dependencies": {
-    "vue": "^2.4.2",
-    "vue-thailand-address": "^1.0.0"
+    "vue": "^2.5.8",
+    "vue-thailand-address": "^2.0.0"
   },
   "devDependencies": {
-    "@storybook/vue": "^3.2.4",
-    "eslint": "^4.4.1",
-    "eslint-config-gluons": "^2.0.2",
-    "eslint-plugin-vue": "^2.1.0"
+    "@storybook/addon-actions": "^3.2.16",
+    "@storybook/vue": "^3.2.16",
+    "css-loader": "^0.28.7",
+    "eslint": "^4.11.0",
+    "eslint-config-gluons": "^2.1.0",
+    "eslint-plugin-vue": "^2.1.0",
+    "nvl": "^1.0.1",
+    "vue-loader": "^13.5.0",
+    "vue-template-compiler": "^2.5.8",
+    "webpack-merge": "^4.1.1"
   }
 }
