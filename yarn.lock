@@ -3800,10 +3800,6 @@ number-is-nan@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/number-is-nan/-/number-is-nan-1.0.1.tgz#097b602b53422a522c1afb8790318336941a011d"
 
-nvl@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/nvl/-/nvl-1.0.1.tgz#0c121b30db13b92585751ab1500432a25a3d7195"
-
 oauth-sign@~0.8.1, oauth-sign@~0.8.2:
   version "0.8.2"
   resolved "https://registry.yarnpkg.com/oauth-sign/-/oauth-sign-0.8.2.tgz#46a6ab7f0aead8deae9ec0565780b7d4efeb9d43"

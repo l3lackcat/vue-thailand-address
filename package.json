@@ -39,7 +39,6 @@
     "eslint": "^4.11.0",
     "eslint-config-gluons": "^2.1.0",
     "eslint-plugin-vue": "^2.1.0",
-    "nvl": "^1.0.1",
     "vue-loader": "^13.5.0",
     "vue-template-compiler": "^2.5.8",
     "webpack-merge": "^4.1.1"
