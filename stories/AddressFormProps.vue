@@ -1,9 +1,10 @@
 <template>
 	<address-form
-		:subdistrictLabel='subdistrictLabel'
-		:districtLabel='districtLabel'
-		:provinceLabel='provinceLabel'
-		:zipcodeLabel='zipcodeLabel'
+		subdistrictLabel='Sub-District'
+		districtLabel='District'
+		provinceLabel='Province'
+		zipcodeLabel='Zip Code'
+		v-model='formData'
 		@itemselect='onItemSelect'
 	>
 	</address-form>
@@ -16,10 +17,12 @@ export default {
 	name: 'address-form-props',
 	data() {
 		return {
-			subdistrictLabel: 'Sub-District',
-			districtLabel: 'District',
-			provinceLabel: 'Province',
-			zipcodeLabel: 'Zip Code'
+			formData: {
+				subdistrict: null,
+				district: null,
+				province: null,
+				zipcode: null
+			}
 		};
 	},
 	methods: {

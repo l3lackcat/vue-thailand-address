@@ -30,7 +30,7 @@
   "homepage": "https://github.com/gluons/vue-thailand-address",
   "dependencies": {
     "vue": "^2.5.8",
-    "vue-thailand-address": "^2.0.0"
+    "vue-thailand-address": "^2.0.2"
   },
   "devDependencies": {
     "@storybook/addon-actions": "^3.2.16",
